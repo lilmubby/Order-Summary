@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('images/pattern-background-mobile.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100vw 28vh;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container{
+  /* align-items: center; */
+  background-color: hsl(225, 100%, 94%);
+  /* background-color: red; */
+  
+  display: flex;
+  height: 83vh;
+  justify-content: center;
+  width: 80vw;
+}
+
+.main-container{
+  background-color: white;
+  border-radius: 35px;
+  height: 100%;
+  padding: 0 0 1.5em;
+  width: 100%;
+}
+
+.main-container img{
+  border-radius: 35px 35px 0 0;
+  width: 100%;
+  height: 23vh;
+}
+.main-container h1{
+  color: hsla(0, 0%, 0%, 0.85);
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-block-start: 1.1em;
+  margin-block-end: .5em;
+  text-align: center;
+}
+.main-container > p{
+  color: hsla(220, 0%, 50%, 0.9);
+  font-size: 2.35rem;
+  font-weight: 700;
+  width: 75%;
+  margin-inline: auto;
+  line-height: 1.95em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.subscription-plan{
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  padding: 2em;
+  margin-inline: auto;
+  margin-bottom: 4em;
+  width: 85%;
+}
+.subscription-plan a{
+  color:hsl(256, 70%, 55%);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.subscription-plan a:hover{
+  text-decoration: none;
+}
+
+.subscription-plan .plan-container{
+  align-items: center;
+  /* column-gap: 13em; */
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.subscription-plan .plan-container> img {
+  height: auto;
+  width: 7.25em;
+}
+
+.subscription-plan .plan-container .plan-text{
+  margin-left: 2.5em;
+}
+.subscription-plan .plan-container .plan-text > p:first-child{
+  color:hsla(0, 0%, 0%, 0.9);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.subscription-plan .plan-container .plan-text > p:last-child{
+  color: hsla(220, 0%, 50%, 0.9);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main-container .btn {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 1em;
+  box-shadow: 0 10px 15px 10px #b2b1df;
+  color: #fff;
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-inline: 1.95em;
+  margin-block: 20px;
+  padding-block: 1.35em;
+  text-align: center;
+  text-decoration: none;
+}
+.main-container .btn:hover{
+  background-color: rgba(56, 41, 224, 0.7);
+}
+
+.main-container .cancel-btn{
+  color:hsla(220, 0%, 50%, 0.9);
+  display: block;
+  font-size: 2.75rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding: 1em 0 .25em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main-container .cancel-btn:hover{
+  color: #000;
+}
+
+@media (min-width: 90em) {
+  body{
+    background-image: url('images/pattern-background-desktop.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100vw 47.5vh;
+  }
+  .container{
+    align-items: center;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    width: 25vw;
+  }
+}
